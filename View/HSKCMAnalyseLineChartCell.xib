@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="325" id="KGk-i7-Jjw" customClass="HSKCMAnalyseLineChartCell">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="325"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="324.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbL-go-Ffs">
+                        <rect key="frame" x="0.0" y="45" width="457" height="279.5"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHd-FC-zlA">
+                                <rect key="frame" x="0.0" y="0.0" width="457" height="280"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eHd-FC-zlA" secondAttribute="trailing" id="BQz-zx-ODj"/>
+                            <constraint firstItem="eHd-FC-zlA" firstAttribute="top" secondItem="nbL-go-Ffs" secondAttribute="top" id="QSD-I7-hdd"/>
+                            <constraint firstAttribute="bottom" secondItem="eHd-FC-zlA" secondAttribute="bottom" id="czk-WO-bPd"/>
+                            <constraint firstItem="eHd-FC-zlA" firstAttribute="leading" secondItem="nbL-go-Ffs" secondAttribute="leading" id="jMm-wE-30u"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wA7-GC-Pn5">
+                        <rect key="frame" x="0.0" y="0.0" width="457" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月消费曲线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8w-jX-ggc">
+                                <rect key="frame" x="15" y="14" width="72" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EX-Gc-b03">
+                                <rect key="frame" x="411" y="15.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8EX-Gc-b03" secondAttribute="trailing" constant="15" id="7Sb-xg-C0M"/>
+                            <constraint firstItem="s8w-jX-ggc" firstAttribute="leading" secondItem="wA7-GC-Pn5" secondAttribute="leading" constant="15" id="H8T-By-75f"/>
+                            <constraint firstItem="8EX-Gc-b03" firstAttribute="centerY" secondItem="s8w-jX-ggc" secondAttribute="centerY" id="NhW-3V-Kbc"/>
+                            <constraint firstAttribute="height" constant="45" id="Nxa-JX-6KO"/>
+                            <constraint firstItem="s8w-jX-ggc" firstAttribute="centerY" secondItem="wA7-GC-Pn5" secondAttribute="centerY" id="jmu-x7-k3T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nbL-go-Ffs" secondAttribute="trailing" id="24L-fB-BEa"/>
+                    <constraint firstAttribute="bottom" secondItem="nbL-go-Ffs" secondAttribute="bottom" id="2rr-ne-FFf"/>
+                    <constraint firstItem="nbL-go-Ffs" firstAttribute="top" secondItem="wA7-GC-Pn5" secondAttribute="bottom" id="4rL-B9-KMT"/>
+                    <constraint firstAttribute="trailing" secondItem="wA7-GC-Pn5" secondAttribute="trailing" id="IHj-DV-KYm"/>
+                    <constraint firstItem="wA7-GC-Pn5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kvq-XH-lcW"/>
+                    <constraint firstItem="wA7-GC-Pn5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xZu-td-sbR"/>
+                    <constraint firstItem="nbL-go-Ffs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ysu-fK-9ul"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineChartHolder" destination="eHd-FC-zlA" id="qqg-aE-wVJ"/>
+                <outlet property="updateDesc" destination="8EX-Gc-b03" id="ikr-WV-LtT"/>
+            </connections>
+            <point key="canvasLocation" x="-67.5" y="140.5"/>
+        </tableViewCell>
+    </objects>
+</document>
